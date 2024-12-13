@@ -8,28 +8,109 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./professional.html">My Professional Page</a>
+    <nav>
+        <div class="center">
+            <h1 style="color: #d3d3d3;">Luke's From-Scratch Page </h1>
+            <div class="center">
+                <a style="margin-right: 10px;" href="./professional.html">Professional Page</a>
+                <a href="#">Web App</a>    
+            </div>
+            <div class="center">
+                <a href="#tableau">Skip to the Tableau Dashboard</a> 
+            </div>
         </div>
     </nav>
 
-    <div class="container my-5">
+    <div class="center">
+        <!-- Unordered List Embedded in Ordered List -->
+        <div class="flex-center">
+            <div class="half">
+                <img src="assets/luke-image.png"/>
+            </div>
+            <div class="half">
+                <section id="list">
+                    <h1 style="text-align: left;">Luke's Favorites</h1>
+                    <ul>
+                        <li>Favorite Foods
+                            <ol>
+                                <li>Pasta Salad</li>
+                                <li>Taco Bell</li>
+                                <li>Hot and Spicy</li>
+                            </ol>
+                        </li>
+                        <li>Favorite Countries
+                            <ol>
+                                <li>India</li>
+                                <li>China</li>
+                                <li>Taiwan</li>
+                            </ol>
+                        </li>
+                        <li>Favorite BBQ Cities
+                            <ol>
+                                <li>Kansas City</li>
+                                <li>Memphis</li>
+                                <li>Austin</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        
+        </div>
+         
         <!-- Embedded YouTube Video Section -->
-        <section id="video" class="mb-5">
-            <h2 class="text-center">Featured Video</h2>
-            <div class="ratio ratio-16x9">
+        <section id="video">
+            <h1>Featured Video</h1>
+            <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/NW2UTLoBW2k?si=cQFjieekXSCPodJe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
+
+        <!-- Embedded Tableau -->
+        <section id="tableau">
+            <h1>Tableau Dashboard</h1>
+            <div class="center">
+                <div class='tableauPlaceholder' id='viz1734055660147' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Season Overview ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;F7&#47;F7S83PQK6&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='path' value='shared&#47;F7S83PQK6' /> 
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;F7&#47;F7S83PQK6&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>                
+                <script type='text/javascript'>            
+                    var divElement = document.getElementById('viz1734055660147');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                    vizElement.style.width='1000px';vizElement.style.height='827px';                    
+                    var scriptElement = document.createElement('script');                    
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+            </div>
+
+        </section>
+        <!--  ON Page Anchor -->
+
+        <!-- Unordered list inside an ordered list -->
+
+        <!-- One image not from Bootstrap theme -->
     </div>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer>
         <p>&copy; 2024 My Professional Page. All Rights Reserved.</p>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

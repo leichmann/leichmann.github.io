@@ -1,32 +1,109 @@
+/* Reset margin and padding for the body */
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 16px;
-  background-color: #add8e6;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  background-color: #d9d9d9;
+  padding-bottom: 100px;
+}
+
+/* Style for the nav element */
+nav {
+  background-color: #110f30;
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: rgb(182, 182, 182);
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+div {
+  padding: 20px;
+  padding-bottom: 5px;
 }
 
 h1 {
-  font-size: 2em;
-  color: #333;
+  font-size: 2.5em;
+  color: #110f30;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase; 
+  margin: 20px 0; 
 }
 
 h2 {
+  font-size: 2em;
+  color: #555; 
+  text-align: left;
+  text-transform: capitalize;
+  margin: 15px 0;
+}
+
+
+h3 {
+  font-size: 1.5em;
+  color: #777; 
+  text-align: right; 
+  font-style: italic; 
+  margin: 10px 0; 
+}
+
+/* Style for the video section */
+#video {
+  margin-bottom: 50px;
+}
+
+#video h2 {
   font-size: 1.5em;
   color: #555;
-  text-align: left;
   text-transform: capitalize;
 }
 
-h3 {
-  color: #777;
-  text-align: right;
-  font-style: italic;
+.center {
+  text-align: center;
 }
 
-p {
-  font-size: 1em;
-  color: #000;
-  line-height: 1.5;
-  text-indent: 20px;
+.flex-center {
+  display: flex;
+}
+
+.half {
+  width: 50%;
+  display: inline-block;
+}
+
+/* Center the Tableau graph */
+#tableau .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the list */
+#list {
+  color: #333;
+  text-align: left;
+  padding-left: 50px;
+}
+
+#list ol {
+  font-size: 0.8em;
+  padding-bottom: 20px;
+}
+
+#list ul {
+  font-size: 1.2em;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
